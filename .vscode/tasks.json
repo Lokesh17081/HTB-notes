@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Sync Notes to GitHub",
+      "type": "shell",
+      "command": "cmd.exe",
+      "args": [
+        "/c",
+        "git add . && git commit -m \"sync notes\" && git push"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
